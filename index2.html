@@ -26,19 +26,13 @@
 
 	var mymap = L.map('mapid').setView([43.468934, -80.537651], 15);
 
-	L.tileLayer("http://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+	L.tileLayer("https://tiles.wmflabs.org/bw-mapnik/${z}/${x}/${y}.png", {
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, '
 	}).addTo(mymap);		
 	L.marker([43.469959, -80.542205]).addTo(mymap)	// Geospatial Centre
 		.bindPopup("<b><a href = https://uwaterloo.ca/library/geospatial/>Geospatial Centre</a></b><br />University of Waterloo, Ontario<table border = 1><tbody><tr><td><b>Day</b></td><td><b>Hours</b></td><tr><td>Monday</td><td>8:30 am - 6 pm</td></tr><tr><td>Tuesday</td><td>8:30 am - 6 pm</td></tr><tr><td>Wednesday</td><td>8:30 am - 6 pm</td></tr><tr><td>Thursday</td><td>8:30 am - 6 pm</td></tr><tr><td>Friday</td><td>8:30 am - 4 pm</td></tr><tr><td>Saturday</td><td>Closed</td></tr><tr><td>Sunday</td><td>Closed</td></tr></tbody></table>").openPopup();
 	L.marker([43.468012, -80.542892]).addTo(mymap)	// Environment Computing - MAD Lab
 		.bindPopup("<b><a href = https://uwaterloo.ca/environment-computing/>Environment Computing - MAD Lab</a></b><br />University of Waterloo, Ontario<img src = https://uwaterloo.ca/environment-computing/sites/ca.environment-computing/files/resize/uploads/images/mad_computerlab_500-750x300.jpg height = 150 width = 300>").openPopup();	
-	L.marker([43.471594, -80.545402]).addTo(mymap)	// SLC
-		.bindPopup("<a href = https://uwaterloo.ca/student-life-centre/><b>Student Life Centre</a></b><br />University of Waterloo, Ontario<img src = http://www.feds.ca/wp-content/blogs.dir/57/files//2016/01/slc_750px-e1433526911661.jpg height = 150 width = 300>").openPopup();	
-	L.marker([43.472700, -80.542195]).addTo(mymap)	// DC Library
-		.bindPopup("<a href = http://www.lib.uwaterloo.ca/index.php><b>DC Library</b></a><br />University of Waterloo, Ontario<table border = 1><tbody><tr><td><b>Day</b></td><td><b>Hours</b></td><tr><td>Monday</td><td>8 am - midnight</td></tr><tr><td>Tuesday</td><td>8 am - midnight</td></tr><tr><td>Wednesday</td><td>8 am - midnight</td></tr><tr><td>Thursday</td><td>8 am - midnight</td></tr><tr><td>Friday</td><td>8 am - midnight</td></tr><tr><td>Saturday</td><td>11 am - midnight</td></tr><tr><td>Sunday</td><td>11 am - midnight</td></tr></tbody></table>").openPopup();
-	L.marker([43.466, -80.53]).addTo(mymap)			// Default Point
-		.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
 </script>
 
 </body>
